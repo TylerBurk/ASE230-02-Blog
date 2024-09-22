@@ -1,5 +1,9 @@
 <?php 
-require_once('data.php');
+if(file_exists('data/posts.json')){
+    $posts_array=json_decode(file_get_contents('data/posts.json'), true);
+} else {
+    echo 'File does not exist';
+}
 ?>
 
 
@@ -19,17 +23,18 @@ require_once('data.php');
             </div>
         </nav> 
         <div class="container">
-            <?php for($i=0;$i<count($data);$i++) {?>
+            <?php for($i=0;$i<count($posts_array);$i++) {?>
             <br />
             <div class="card">
-                <h5 class="card-header"><?= $data[$i]['firstName'].' '.$data[$i]['lastName']; ?></h5>
+                <h5 class="card-header"><?= $posts_array[$i]['author']; ?></h5>
                 <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-body-secondary"><?= $data[$i]['creationDate']; ?></h6>
-                    <h5 class="card-title"><?= $data[$i]['title']; ?></h5>
-                    <a href="detail.php?post_id=<?php echo $i; ?>" class="btn btn-primary">See Blog</a>
+                    <h6 class="card-subtitle mb-2 text-body-secondary"><?= $posts_array[$i]['date']; ?></h6>
+                    <h5 class="card-title"><?= $posts_array[$i]['title']; ?></h5>
+                    <a href="detail.php?post_id=<?= $i; ?>" class="btn btn-primary">See Blog</a>
                 </div>
             </div>
             <?php } ?>
         </div>   
     </body>
+    <br />
 </html>

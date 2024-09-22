@@ -1,0 +1,37 @@
+[
+    {
+        "title":"Lost in the woods!",
+        "content":"Somebody please help me! I am lost in the woods have no way of getting out!",
+        "author":"Tyler Burk",
+        "date":"3/15/2024",
+        "id":"0002"
+    },
+    {
+        "title":"Can't find my cat!",
+        "content":"The darn cat just ran away! What am I supposed to do!!!! I have to go looking for my cat, but I really need to sleep for work tomorrow. Going to do some heavy drinking to reflect on what I should do.",
+        "author":"Will Smith",
+        "date":"6/18/2024",
+        "id":"0003"
+    },
+    {
+        "title":"Where is my sock?",
+        "content":"Lost my sock and cannot find it :(",
+        "author":"Fred Lewis",
+        "date":"7/1/2024",
+        "id":"0001"
+    },
+    {
+        "title":"Father is Lebron James?",
+        "content":"My mother recently told me that my real father is Lebron James... I don't know what to think anymore...",
+        "author":"Jason Bourne",
+        "date":"8/25/2024",
+        "id":"0005"
+    },
+    {
+        "title":"Who stole my waffle maker?!?!?!?",
+        "content":"My waffle maker was stolen and now I have no way of getting it back. I need help finding this individual!",
+        "author":"Machel Myers",
+        "date":"9/12/2024",
+        "id":"0004"
+    }
+]
